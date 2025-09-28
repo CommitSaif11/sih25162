@@ -1,0 +1,11 @@
+part_id: example_part
+oem: "Acme Semiconductor"
+part_number: "ACM1234"
+package: "QFN-48"
+logo_hint: "ACME"
+patterns:
+  part_code: "\\bACM1234\\b"
+  date_code: "\\b(24|25)[0-5][0-9]\\b"     # YYWW
+  lot_code: "\\bL[0-9A-Z]{4,6}\\b"
+notes: |
+  Example KB entry. Update regex patterns per OEM marking guide.
